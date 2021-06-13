@@ -18,7 +18,7 @@ burger.addEventListener('click', (e) => {
 });
 
 remove.addEventListener('click', (e) => {
-    toggleRemove();
+    move();
 });
 
 btnPopup.addEventListener('click', (e) => {
@@ -47,8 +47,11 @@ function toggleIs() {
     popapArea.classList.toggle('showIs');
 }
 
-function toggleRemove () {
+function move() {
     remove.classList.toggle('remove');
+}
+
+function toggleRemove () {
     overlay.classList.remove('show');
     burger.classList.toggle('show');
     menu.classList.toggle('show');
